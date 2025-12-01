@@ -1,3 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Brenda Ariho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="logo">Brenda Ariho</a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">My Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>My Cloud & Data Projects</h1>
+    <p>Each project below includes architecture, process, challenges, and outcomes.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- PROJECT CARD TEMPLATE -->
+    <div class="project-doc-card">
+
+      <h2>Static Website on AWS S3</h2>
+      <p><strong>Overview:</strong> Deployed a static HTML/CSS website on AWS S3 with logging, versioning, and correct public access configuration.</p>
+
+      <h3>Services Used</h3>
+      <ul>
+        <li>AWS S3</li>
+        <li>AWS Route 53</li>
+        <li>AWS IAM</li>
+      </ul>
+
+      <h3>Architecture Diagram</h3>
+      <img src="images/s3-diagram.png" alt="S3 Project Diagram" class="diagram">
+
+      <h3>Steps</h3>
+      <ol>
+        <li>Created and configured S3 bucket for static hosting</li>
+        <li>Uploaded HTML/CSS files</li>
+        <li>Set correct bucket policy + CORS rules</li>
+        <li>Enabled versioning and logging</li>
+        <li>Linked custom domain using Route 53</li>
+      </ol>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li>Solved 403 Access Denied from incorrect bucket permissions</li>
+        <li>Learned correct hosting configuration</li>
+      </ul>
+
+      <h3>Outcome</h3>
+      <p>Website deployed successfully and accessible through S3 static hosting URL.</p>
+
+      <div class="buttons">
+        <a href="https://github.com/brendariho-cmyk/Secure-Static-Website" class="btn">GitHub Repo</a>
+      </div>
+
+    </div>
+    <!-- END PROJECT -->
+
+
+    <!-- PROJECT 2 -->
+    <div class="project-doc-card">
+
+      <h2>Ecommerce Traffic Spikes Analysis</h2>
+      <p><strong>Overview:</strong> Analyzed ecommerce traffic spike patterns to identify peak hours and user behavior trends.</p>
+
+      <h3>Tools Used</h3>
+      <ul>
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+      </ul>
+
+      <h3>Story & Challenges</h3>
+      <p>Handling a large dataset required memory optimization and efficient filtering. Learned how to extract insights and visualize key patterns.</p>
+
+      <h3>Outcome</h3>
+      <p>Identified performance bottlenecks and recommended improvements for traffic handling.</p>
+
+      <div class="buttons">
+        <a href="https://github.com/brendariho-cmyk/Ecommerce-Spikes" class="btn">GitHub Repo</a>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 3 -->
+    <div class="project-doc-card">
+
+      <h2>Customer Feedback API (Serverless)</h2>
+      <p><strong>Overview:</strong> Built a production-ready API using AWS Lambda, API Gateway, and DynamoDB.</p>
+
+      <h3>Architecture Diagram</h3>
+      <img src="images/api-diagram.png" alt="API Diagram" class="diagram">
+
+      <h3>Services Used</h3>
+      <ul>
+        <li>AWS Lambda</li>
+        <li>API Gateway</li>
+        <li>DynamoDB</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <p>Debugging async DynamoDB operations and request/response formatting for API Gateway.</p>
+
+      <h3>Outcome</h3>
+      <p>Working REST API for storing, reading, and managing customer feedback.</p>
+
+      <div class="buttons">
+        <a href="https://github.com/brendariho-cmyk/Customer-Feedback-API" class="btn">GitHub Repo</a>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 4 -->
+    <div class="project-doc-card">
+
+      <h2>AWS Restart Question Bank</h2>
+      <p><strong>Overview:</strong> Built a categorized AWS question bank to help learners prepare for cloud roles.</p>
+
+      <h3>Structure</h3>
+      <ul>
+        <li>EC2</li>
+        <li>S3</li>
+        <li>IAM</li>
+        <li>Networking</li>
+        <li>Serverless</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <p>Organizing large sets of questions and designing a clean structure for easy navigation.</p>
+
+      <h3>Outcome</h3>
+      <p>Well-structured revision resource for AWS Restart learners.</p>
+
+      <div class="buttons">
+        <a href="https://github.com/brendariho-cmyk/aws-restart-question-bank" class="btn">GitHub Repo</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Brenda Ariho</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

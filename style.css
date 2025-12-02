@@ -367,6 +367,63 @@ footer {
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
+
+
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px 10px;
+}
+
+/* Hide menu by default on mobile */
+#mobileMenu {
+  transition: max-height 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  
+  .hamburger {
+    display: block;
+  }
+
+  /* Collapse nav items */
+  #mobileMenu {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+
+  #mobileMenu a {
+    padding: 12px 0;
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid #efefef;
+  }
+
+  /* When open */
+  #mobileMenu.open {
+    max-height: 300px; /* enough for 5 items */
+  }
+}
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------------------
    RESPONSIVE DESIGN
 --------------------------------------------------- */
@@ -389,6 +446,128 @@ footer {
   }
 }
 
+
+
+
+/* ---------------------------------------------------
+   MOBILE OPTIMIZATION FIX (IMPORTANT)
+--------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .nav-right a {
+    display: inline-block;
+    margin: 6px 8px;
+    font-size: 0.95rem;
+  }
+
+  /* HEADER */
+  header {
+    padding: 30px 15px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* HOME CARD (intro + about + education) */
+  .home-card {
+    padding: 20px 15px;
+    margin-top: 25px;
+  }
+
+  .home-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro-text {
+    font-size: 1.05rem;
+  }
+
+  /* PROJECT CARDS HOMEPAGE */
+  .project-cards {
+    grid-template-columns: 1fr; /* one per row */
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  /* BOLD PROJECT DOCS */
+  .project-doc-card {
+    padding: 20px 15px;
+    margin-bottom: 25px;
+  }
+
+  .project-doc-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .diagram {
+    width: 100%;
+  }
+
+  /* GENERAL CARD LAYOUTS */
+  .card {
+    padding: 20px 15px;
+  }
+
+  /* FONT SIZES */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  /* BUTTONS */
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .btn-outline {
+    font-size: 0.9rem;
+  }
+}
+
+/* EXTREME SMALL PHONES (iPhone SE / older Android) */
+@media (max-width: 420px) {
+
+  .nav-container {
+    gap: 4px;
+  }
+
+  .profile-img {
+    width: 85px;
+    height: 85px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+
+  .home-card {
+    padding: 15px;
+  }
+}
 
 
 

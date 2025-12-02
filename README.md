@@ -12,10 +12,10 @@ Breaking into cloud engineering can feel overwhelming when you're new — no job
 
 So I built a set of hands-on projects that show exactly what I can do right now:
 
-✔️ Deploy applications on AWS
-✔️ Design architectures that scale
-✔️ Work with serverless and databases
-✔️ Solve real problems with clean, simple solutions
+*✔️ Deploy applications on AWS
+*✔️ Design architectures that scale
+*✔️ Work with serverless and databases
+*✔️ Solve real problems with clean, simple solutions
 
 This portfolio represents weeks of practice, learning, mistakes, debugging, and growth — all shared here.
 

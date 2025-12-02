@@ -8,7 +8,7 @@ A project-backed introduction to my journey into cloud engineering.
 
 ## 👋 Hi, I’m Brenda — Welcome to My Cloud Portfolio
 
-Breaking into cloud engineering can feel overwhelming when you're new — no job experience, no certifications yet, just determination. This is proof to myself (and future employers) that I can *build real solutions*, not just understand theory.
+Breaking into cloud engineering can feel overwhelming when you're new — no job experience, yet, just determination. This is proof to myself (and future employers) that I have and can *build real solutions*, not just understand theory.
 
 So I built a set of hands-on projects that show exactly what I can do right now:
 

@@ -25,6 +25,38 @@
   </nav>
   
 
+
+
+
+  <nav>
+  <div class="nav-container">
+    <div class="nav-left">Brenda Ariho</div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <!-- Menu Items -->
+    <div class="nav-right" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">My Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+
+  
+
+
+
+
+
+  
   
   <header>
     <div class="container">
@@ -219,5 +251,16 @@
 
 </body>
 </html>
+
+
+
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("open");
+  }
+</script>
+
 
  
